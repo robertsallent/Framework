@@ -1,0 +1,22 @@
+{
+	"name" : "robertsallent/framework2020",
+	"type" : "project",
+	"license" : "GPL-3.0-or-later",
+	"minimum-stability" : "dev",
+	"description" : "Framework PHP para los cursos de desarrollo de aplicaciones con PHP",
+	"keywords" : [
+		"develop",
+		"framework"
+	],
+	"homepage" : "https://robertsallent.com",
+	"authors" : [{
+			"name" : "Robert Sallent",
+			"email" : "robertsallent@gmail.com",
+			"homepage" : "http://robertsallent.com",
+			"role" : "Developer"
+		}
+	],
+	"require" : {
+		"php" : ">=7.2.0"
+	}
+}

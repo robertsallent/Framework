@@ -1,0 +1,26 @@
+# Evita el listado de directorio
+# Options -Indexes
+
+# Pone en marcha el mod rewrite
+RewriteEngine on
+
+# Base para todas las peticiones (DocumentRoot)
+RewriteBase /
+
+# REGLAS PARA LA APLICACIÓN
+# Primera regla: solamente controlador
+# ejemplo: /libro --> /index.php?c=libro
+
+RewriteRule ^([a-z]+)/?$ /index.php?c=$1 [NC,L]
+
+# Segunda regla: controlador y método
+# ejemplo: /libro/create --> /index.php?c=libro&m=create
+
+RewriteRule ^([a-z]+)/([a-z]+)/?$ /index.php?c=$1&m=$2 [NC,L]
+
+# Tercera regla: controlador, método y parámetro
+# ejemplo: /libro/show/4 --> /index.php?c=libro&m=show&p=4
+
+RewriteRule ^([a-z]+)/([a-z]+)/([a-z0-9]+)/?$ /index.php?c=$1&m=$2&p=$3 [NC,L]
+
+
